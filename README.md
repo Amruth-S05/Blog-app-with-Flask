@@ -1,4 +1,4 @@
-# -Blog-app-with-Flask-
+# Blog-app-with-Flask
 ### Create a full-stack Blog web app using HTML, CSS, Python-Flask, SQLite
 
 ### QUICK START
