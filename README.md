@@ -3,6 +3,6 @@
 
 ### QUICK START
 
-Markup: * Clone the repository using
-Markup: ```$ git clone 
-        ```
+Markup : * Clone the repository using
+Markup : ```$ git clone 
+         ```
