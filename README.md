@@ -3,6 +3,14 @@
 
 ### QUICK START
 
-Markup : * Clone the repository using
-Markup : ```$ git clone 
-         ```
+- Create a directory flask-blog and cd into it
+
+```mkdir flask-blog
+```
+```cd flask-blog
+```
+
+- Clone the repository
+
+```git clone https://github.com/Amruth-S05/Blog-app-with-Flask.git
+```
