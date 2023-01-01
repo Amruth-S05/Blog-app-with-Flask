@@ -19,6 +19,10 @@ cd flask-blog
 ```
 git clone https://github.com/Amruth-S05/Blog-app-with-Flask.git
 ```
+- cd into Bolg-app-with-Flask
+```
+cd Blog-app-with-Flask
+```
 - Initialize the database required to store user and post data
 
 ```
@@ -32,3 +36,12 @@ flask --app flaskr --debug run
 ```
 - Visit 127.0.0.1:5000/ or localhost:5000/ from your browser
 - To stop the development server use ^C in the terminal
+
+### To use it as a package (Run app from anywhere)
+(Assuming your in Flask-app-blog)
+
+- Install the package through pip
+```
+pip install -e .
+```
+- Now you can start the app even from the outside of project directory.
