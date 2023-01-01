@@ -38,7 +38,7 @@ flask --app flaskr --debug run
 - To stop the development server use ^C in the terminal
 
 ### To use it as a package (Run app from anywhere)
-(Assuming your in Flask-app-blog)
+(Assuming you are in Flask-app-blog)
 
 - Install the package through pip
 ```
