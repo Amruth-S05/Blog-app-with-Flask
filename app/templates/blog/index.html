@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Blog Posts</h1>
+    {% if posts %}
+        <ul>
+            {% for post in posts %}
+                <li>
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.body }}</p>
+                    <p><i>By {{ post.username }} on {{ post.created }}</i></p>
+                    <a href="/{{ post.id }}/update">Edit</a> |
+                    <form action="/{{ post.id }}/delete" method="post" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No posts yet. <a href="/create">Create one</a>.</p>
+    {% endif %}
+    <a href="/create">Create a new post</a>
+</body>
+</html>

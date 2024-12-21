@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Post</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Update Post</h1>
+    <form action="/{{ post.id }}/update" method="post">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" value="{{ post.title }}" required>
+        <br>
+        <label for="body">Body:</label>
+        <textarea id="body" name="body" rows="4" required>{{ post.body }}</textarea>
+        <br>
+        <button type="submit">Update</button>
+    </form>
+    <a href="/">Back to blog</a>
+</body>
+</html>
